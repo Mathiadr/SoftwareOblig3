@@ -12,6 +12,4 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
-          cache: 'gradle'
-      - run: ./gradlew build --no-daemon
       - run: java LeapYearTest.java
