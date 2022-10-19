@@ -1,0 +1,17 @@
+name: dsfsdf
+on: [push]
+jobs:
+  run-tests:
+    name: "Run test"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/Checkout@v2
+      - name: Setup
+        uses: actions/setup-java@v2
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: 'gradle'
+      - run: ./gradlew build --no-daemon
+      - run: java LeapYearTest.java
