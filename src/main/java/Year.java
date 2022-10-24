@@ -2,7 +2,7 @@ public class Year {
     /*
     A leap year MUST be dividable by 4,
     but cannot be dividable by 100
-    UNLESS it is also dividable by 400
+    UNLESS it is also dividable by 400.
     */
 
 
